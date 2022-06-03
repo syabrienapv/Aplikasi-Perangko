@@ -3,7 +3,7 @@
 	<head>
 		<title>Dashboard</title>
 		<!-- menghubungkan dengan file css -->
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="../style.css">
 		<!-- menghubungkan dengan file jquery -->
 		<script type="text/javascript" src="jquery.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -16,7 +16,7 @@
 	-->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 		<a class="navbar-brand" href="#">
-			<img src="image/icon.png" width="45" height="30" alt="">
+			<img src="../image/icon.png" width="45" height="30" alt="">
 		</a>
 		<a class="navbar-brand" href="#">E-Perangko</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,10 +26,10 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-				<a class="nav-link" href="#">Beranda</a>
+				<a class="nav-link" href="index.php">Beranda</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="halaman/pembelian.php">Pembelian</a>
+				<a class="nav-link" href="halaman/home.php">Pembelian</a>
 			</li>
 			<!--
 			<li class="nav-item dropdown">
@@ -60,12 +60,30 @@
 		</div>
 	</nav>
 
-	<div class="content">
-		<div class="jumbotron">
-			
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="../image/perangko.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Perangko</h5>
+						<p class="card-text">Ini adalah test</p>
+						<a href="#" class="btn btn-primary">Beli Sekarang</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="../image/materai.jfif" alt="Card image cap" width="286" height="178.53">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Ini adalah test</p>
+						<a href="#" class="btn btn-primary">Beli Sekarang</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-
 	<?php 
 	/*
 		if(isset($_GET['page'])){

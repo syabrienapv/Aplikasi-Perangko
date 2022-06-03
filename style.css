@@ -1,6 +1,6 @@
 body{
 	background-color:#f9f9f9;
-	font-size:16px
+	font-size:16px;
 	color:#444;
 	font-family: sans-serif;
 }
@@ -71,4 +71,37 @@ div.badan{
 div.halaman{
 	text-align: center;
 	padding: 30px 20px;	
+}
+
+
+.jumbotron {
+	background-image: url("/image/jumbotron.jpg");
+	background-size: cover;
+	min-height: 500px;
+}
+
+.navbar{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.nav-item{
+	align-items: flex-end;
+}
+
+.footer{
+	height: 300px;
+	width: 100%;
+	background-color: gray;
+	/* background-color: #F2F3F3; */
+}
+
+.footer-about{
+	color: white;
+	padding: 45px;
+}
+
+.container{
+	margin: 10px auto;
 }
